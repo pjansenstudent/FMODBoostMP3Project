@@ -7,3 +7,5 @@ As such, this program requires the boost C++ libraries, as well as the FMOD API.
 
 Boost is available here: [Boost Libraries](https://www.boost.org)
 FMOD is available from FMOD's website here (requires sign up): [FMOD Website](https://www.fmod.com)
+
+NOTE: currently, the makefile and build process is set up for Linux 64-bit only.
