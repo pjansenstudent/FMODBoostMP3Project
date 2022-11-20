@@ -1,9 +1,9 @@
 
-#include <iostream>
-#include <string>
-#include <boost/filesystem.hpp>
-#include "fmod_files/fmod.hpp"
-#include "fmod_files/fmodlinux.h"
+#include<iostream>
+#include<string>
+#include<boost/filesystem.hpp>
+#include"fmod_files/fmod.hpp"
+#include"fmod_files/fmodlinux.h"
 
 using std::cout;
 using std::endl;
@@ -214,6 +214,12 @@ int main() {
 
     if(nextCommand == upperBound){
       exitState = true;
+    }
+    else if (nextCommand < 1){
+    	//do nothing (prevents crash)
+    }
+    else if (nextCommand > upperBound){
+    	//do nothing (prevents crash)
     }
     else if (nextCommand == 1){
       currPath += "../";
